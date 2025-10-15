@@ -1,0 +1,8 @@
+{# templates/bundles/TwigBundle/Exception/error404.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %}Page introuvable (404){% endblock %}
+{% block body %}
+    <h1>🔎 Oups, page introuvable</h1>
+    <p>La ressource demandée n’existe pas ou a été déplacée.</p>
+    <a class="btn btn-secondary" href="{{ path('app_welcome_index') }}">Accueil</a>
+{% endblock %}

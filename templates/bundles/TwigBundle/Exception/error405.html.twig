@@ -1,0 +1,8 @@
+{# templates/bundles/TwigBundle/Exception/error405.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %}Méthode non autorisée (405){% endblock %}
+{% block body %}
+    <h1>⛔ Méthode non autorisée</h1>
+    <p>La méthode HTTP utilisée n’est pas autorisée sur cette route.</p>
+    <a class="btn btn-secondary" href="{{ path('app_welcome_index') }}">Accueil</a>
+{% endblock %}

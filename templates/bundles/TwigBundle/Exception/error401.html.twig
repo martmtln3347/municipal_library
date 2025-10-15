@@ -1,0 +1,8 @@
+{# templates/bundles/TwigBundle/Exception/error401.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %}Non authentifié (401){% endblock %}
+{% block body %}
+    <h1>🔐 Authentification requise</h1>
+    <p>Veuillez vous connecter pour accéder à cette page.</p>
+    <a class="btn btn-primary" href="{{ path('app_login') }}">Se connecter</a>
+{% endblock %}

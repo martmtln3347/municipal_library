@@ -1,0 +1,8 @@
+{# templates/bundles/TwigBundle/Exception/error403.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %}Accès refusé (403){% endblock %}
+{% block body %}
+    <h1>🚫 Accès refusé</h1>
+    <p>Vous n’avez pas les droits pour accéder à cette ressource.</p>
+    <a class="btn btn-secondary" href="{{ path('app_welcome_index') }}">Accueil</a>
+{% endblock %}
